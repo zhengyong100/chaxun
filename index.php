@@ -77,8 +77,9 @@ width: 200px;
   选择数据库：<select name="shujuming" id="shujuming" class="xuanze" onchange="save()"> //self.location.href=options[selectedIndex].value;onchange=save() 点击刷新
               <?php
     $shujuming=glob("*.txt");
+  $shujumingcheng=str_replace(strrchr($shujuming, "."),"",$shujuming);
         for ($i=0; $i<count($shujuming); $i++) { 
-echo "<option value='$shujuming[$i]'>$shujuming[$i]</option>"; 
+echo "<option value='$shujuming[$i]'>$shujumingcheng</option>"; 
 } 
       ?>
               </select> <a href="denglu.php">添加数据库</a><br><br>
