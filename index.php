@@ -111,7 +111,7 @@
                     foreach ($lines as $line_num => $line) {
                         if ($line_num > 0) {
                             $t = 0;
-                            $p = explode(' ',$line);
+                            $p = explode('\n',$line);
                             if ($_GET['chaxun']<>"") {
                                 if (strstr($p[0],$chaxun)) {
                                     $t = 1;
